@@ -36,7 +36,7 @@ Code:
 ## html iframe to embed the slide.
 
 <div class="resp-container">
-    <iframe class="testiframe" src="https://diegotrindade.github.io/presentation/use_master.html">
+    <iframe class="testiframe" src="https://diegotrindade.github.io/presentation/presentation.html">
       Fallback text here for unsupporting browsers, of which there are scant few.
     </iframe>
 </div>
