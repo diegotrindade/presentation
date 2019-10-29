@@ -288,7 +288,7 @@ class: inverse, left, top
 - By tracking both observed and dark diversity dynamics over time we are more equipped to predict and mitigate species gains and loss
 
 - Such information might help us to better delineate restoration and conservation activities
-
+<br><br>
 .pull-right[
 ```{r echo=FALSE, out.height= "70%", out.width="90%"}
 # All defaults
