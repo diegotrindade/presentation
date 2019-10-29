@@ -46,8 +46,9 @@ background-size: 100% 100%
 ---
 class: inverse, left, top
 
-## Biodiversity change: scale and temporal issues
+### Biodiversity change: spatial scale and temporal issues
 
+<br><br>
 ![plot](vellend.png)
 .right[Vellend et al. 2017 Annual Reviews]
 
@@ -55,7 +56,7 @@ class: inverse, left, top
 
 class: inverse, left, top
 
-### Biodiversity change: scale and temporal issues
+### Biodiversity change: spatial scale and temporal issues
 
 
 ```{r echo=FALSE, out.height= "70%", out.width="80%"}
@@ -105,17 +106,17 @@ include_graphics("obs.dark.png")
 
 class: inverse, left, top
 
-### Dark diversity: what is it and why?
+### Dark diversity: definition and estimation
 
-- Dark diversity has been inspired by the "dark matter" idea in physics
+- The term dark diversity was borrowed from the dark matter idea in asthrophysics;
 
-- By definition: Dark diversity corresponds to the species that can potentially be present in a local community but are currently absent
+- Dark diversity corresponds to the species that could potentially be present in a local community but are currently absent;
 
-- Like the dark matter, dark diversity cannot be seen but estimated.
+- Like dark matter, dark diversity cannot be seen but estimated.
 
 --
 
-<br><br><br>
+<br>
 .center[
 ```{r echo=FALSE, out.height= "50%", out.width="50%"}
 # All defaults
@@ -131,14 +132,23 @@ include_graphics("beals.png")
 
 class: inverse, left, top
 
-### Biodiversity flows
+### Species gains and losses
 
-```{r echo=FALSE, out.height= "50%", out.width="80%"}
+- We hypothesize four "biodiversity flows" during global change
+
+```{r echo=FALSE, out.height= "50%", out.width="70%"}
 # All defaults
 library(knitr)
 include_graphics("fig1a.png")
 ```
 .right[Trindade et al. Under review - Global Change Biology]
+
+--
+
+.right[Manuscript's journey]
+.right[TREE - proposal rejected]
+.right[Nature Eco Evo - proposal rejected]
+.right[Ecology letters - proposal accepted / paper rejected after review]
 
 ---
 
@@ -154,16 +164,24 @@ include_graphics("fig1c.png")
 .right[Trindade et al. Under review - Global Change Biology]
 
 ---
+class: inverse, left, top
 
 ### Simple time-delay model
 
-We created a simple model to test the four hypothesized flows
+- We created a model to test the four hypothesized flows:
+
+<br>
+```{r echo=FALSE, out.height= "50%", out.width="80%"}
+# All defaults
+library(knitr)
+include_graphics("fig1d.png")
+```
 
 ---
 
 class: inverse, left, top
 
-### Simulation
+### Simulation results
 
 
 ```{r echo=FALSE, out.height= "40%", out.width="85%"}
@@ -172,25 +190,9 @@ library(knitr)
 include_graphics("fig2.png")
 ```
 
-
 ---
-
-Therefore, our guess is:
-
-- By looking at the dark diversity we have both faces of the coin
-
-
-- Species going locally extinct might persist in dakr diversity for some time
-
-
-- After a change, before arriving in the local site, new species might be detected in the dark diversity.
-
-
-- In summary it gives us time either to protect species from regional extinction or to facilitate species colonization (restoration) or prevent some species to colonize (invasive species).
-
----
-
-### Further steps
+class: inverse, left, top
+### Next steps
 
 - Applying the conceptual idea using individual-based models and real datasets (i.e. Pollen data, North American Breeding Bird Survey, Biotime data etc.)
 
@@ -263,7 +265,7 @@ include_graphics("ind_basee.png")
 
 ---
 class: inverse, left, top
-### Individual-based model
+### Individual-based model - Extinction debt
 
 
 ```{r echo=FALSE, out.height= "20%", out.width="100%"}
@@ -276,15 +278,21 @@ include_graphics("extd.png")
 
 ---
 class: inverse, left, top
+
 ### Take-home message
 
 - Dark diversity allows us to better integrate different scales
 
-- Dark diversity might offer a temporary buffer for local extinctions which are potentially reversible
+- Dark diversity might offer a temporary buffer for locally extinct species;
 
-- By tracking both observed and dark diversity we can be more equiped to predict species gains and loss
+- By tracking both observed and dark diversity dynamics over time we are more equipped to predict and mitigate species gains and loss
 
-- Such information might help us to better deliniate restoration and conservation activities
+- Such information might help us to better delineate restoration and conservation activities
 
-
-
+.pull-right[
+```{r echo=FALSE, out.height= "70%", out.width="90%"}
+# All defaults
+library(knitr)
+include_graphics("darkside.jpg")
+```
+]
