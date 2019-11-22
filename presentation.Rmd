@@ -46,7 +46,7 @@ background-size: 100% 100%
 ---
 class: inverse, left, top
 
-### Biodiversity change: spatial scale and temporal issues
+### Biodiversity change: spatial scale issue
 
 <br><br>
 ![plot](vellend.png)
@@ -56,18 +56,20 @@ class: inverse, left, top
 
 class: inverse, left, top
 
-### Biodiversity change: spatial scale and temporal issues
+### Biodiversity change: temporal issue
 
 
 ```{r echo=FALSE, out.height= "70%", out.width="80%"}
 # All defaults
 library(knitr)
 include_graphics("https://ars.els-cdn.com/content/image/1-s2.0-S016953471300027X-gr1.jpg")
+
 ```
 
 .right[Hylander & Ehrlér 2013 TREE]
 
 ---
+
 
 class: inverse, left, top
 
@@ -108,15 +110,15 @@ class: inverse, left, top
 
 ### Dark diversity: definition and estimation
 
-- The term dark diversity was borrowed from the dark matter idea in asthrophysics;
+- .large[The term dark diversity was borrowed from the dark matter idea in asthrophysics;]
 
-- Dark diversity corresponds to the species that could potentially be present in a local community but are currently absent;
+- .large[Dark diversity corresponds to the species that could potentially be present in a local community but are currently absent;]
 
-- Like dark matter, dark diversity cannot be seen but estimated.
+- .large[Like dark matter, dark diversity cannot be seen but estimated.]
 
 --
 
-<br>
+<!--
 .center[
 ```{r echo=FALSE, out.height= "50%", out.width="50%"}
 # All defaults
@@ -126,6 +128,34 @@ include_graphics("beals.png")
 ]
 
 .pull-right[Lewis et al. 2016 Methods Eco. Evol.]
+-->
+---
+class: inverse, left, top
+
+### Very first conceptual idea
+
+```{r echo=FALSE, out.height= "90%", out.width="120%"}
+# All defaults
+library(knitr)
+include_graphics("first_concept.jpg")
+```
+
+---
+
+class: inverse, left, top
+
+### Species gains and losses
+
+- .large[We hypothesize four "biodiversity flows" during global change]
+
+```{r echo=FALSE, out.height= "70%", out.width="90%"}
+# All defaults
+library(knitr)
+include_graphics("fig1a.png")
+```
+.right[Trindade et al. submitted]
+
+--
 
 
 ---
@@ -134,44 +164,20 @@ class: inverse, left, top
 
 ### Species gains and losses
 
-- We hypothesize four "biodiversity flows" during global change
-
-```{r echo=FALSE, out.height= "50%", out.width="70%"}
-# All defaults
-library(knitr)
-include_graphics("fig1a.png")
-```
-.right[Trindade et al. Under review - Global Change Biology]
-
---
-
-.right[Manuscript's journey]
-.right[TREE - proposal rejected]
-.right[Nature Eco Evo - proposal rejected]
-.right[Ecology letters - proposal accepted / paper rejected after review]
-
----
-
-class: inverse, left, top
-
-### Species gain and loss
-
 ```{r echo=FALSE, out.height= "50%", out.width="70%"}
 # All defaults
 library(knitr)
 include_graphics("fig1c.png")
 ```
-.right[Trindade et al. Under review - Global Change Biology]
+.right[Trindade et al. submitted]
 
 ---
 class: inverse, left, top
 
-### Simple time-delay model
-
-- We created a model to test the four hypothesized flows:
+### Time-delay model
 
 <br>
-```{r echo=FALSE, out.height= "50%", out.width="80%"}
+```{r echo=FALSE, out.height= "50%", out.width="90%"}
 # All defaults
 library(knitr)
 include_graphics("fig1d.png")
@@ -184,7 +190,7 @@ class: inverse, left, top
 ### Simulation results
 
 
-```{r echo=FALSE, out.height= "40%", out.width="85%"}
+```{r echo=FALSE, out.height= "60%", out.width="90%"}
 # All defaults
 library(knitr)
 include_graphics("fig2.png")
@@ -194,11 +200,18 @@ include_graphics("fig2.png")
 class: inverse, left, top
 ### Next steps
 
-- Applying the conceptual idea using individual-based models and real datasets (i.e. Pollen data, North American Breeding Bird Survey, Biotime data etc.)
+- .large[Applying the conceptual idea using individual-based models and real datasets (i.e. Pollen data, North American Breeding Bird Survey, Biotime data etc.)]
+.pull-right[
+```{r echo=FALSE, out.height= "20%", out.width="80%"}
+# All defaults
+library(knitr)
+include_graphics("https://media.giphy.com/media/p5gSU97t34rRe/giphy.gif")
+```
+]
 
 ---
 class: inverse, left, top
-### Pollen data
+### Pollen data - observed and dark diversity
 
 
 ```{r echo=FALSE, out.height= "90%", out.width="120%"}
@@ -207,12 +220,11 @@ library(knitr)
 include_graphics("pollen_obs_dark.png")
 ```
 
-
 ---
 class: inverse, left, top
 
-### Pollen data
-
+### Pollen data - species gain and loss rate
+ 
 ```{r echo=FALSE, out.height= "70%", out.width="120%"}
 # All defaults
 library(knitr)
@@ -221,17 +233,32 @@ include_graphics("pollen_gainloss_rate.png")
 ---
 class: inverse, left, top
 
-### Pollen data
-- .left[Herbs]
-```{r echo=FALSE, out.height= "30%", out.width="80%"}
+### Pollen data - functional traits
+
+- .large[Herbs]
+<br>
+<br>
+<br>
+```{r echo=FALSE, out.height= "100%", out.width="100%"}
 # All defaults
 library(knitr)
 include_graphics("herb_pollen_fig1.png")
 
 
 ```
-- .left[Trees]
-```{r echo=FALSE, out.height= "30%", out.width="80%"}
+
+
+---
+
+class: inverse, left, top
+
+### Pollen data - functional traits
+
+- .large[Trees]
+<br>
+<br>
+<br>
+```{r echo=FALSE, out.height= "40%", out.width="100%"}
 # All defaults
 library(knitr)
 include_graphics("tree_pollen_fig1.png")
@@ -240,6 +267,7 @@ include_graphics("tree_pollen_fig1.png")
 ```
 ---
 class: inverse, left, top
+
 ### Individual-based model
 
 ```{r echo=FALSE, out.height= "30%", out.width="100%"}
@@ -276,21 +304,22 @@ include_graphics("extd.png")
 
 ```
 
+
 ---
 class: inverse, left, top
 
 ### Take-home message
 
-- Dark diversity allows us to better integrate different scales
+- .large[Dark diversity allows us to better integrate different scales;]
 
-- Dark diversity might offer a temporary buffer for locally extinct species;
+- .large[Dark diversity might offer a temporary buffer for locally extinct species;]
 
-- By tracking both observed and dark diversity dynamics over time we are more equipped to predict and mitigate species gains and loss
+- .large[By tracking both observed and dark diversity dynamics over time we are more equipped to predict and mitigate species gains and loss;]
 
-- Such information might help us to better delineate restoration and conservation activities
-<br><br>
+- .large[Such information might help us to better delineate restoration and conservation activities]
+
 .pull-right[
-```{r echo=FALSE, out.height= "70%", out.width="90%"}
+```{r echo=FALSE, out.height= "70%", out.width="80%"}
 # All defaults
 library(knitr)
 include_graphics("darkside.jpg")
