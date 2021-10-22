@@ -143,6 +143,30 @@ include_graphics("assembly.jpeg")
 
 <br>
 
+
+---
+class: inverse
+
+### How do site-specific species pools change over time?
+
+.left-column-img[
+```{r echo=FALSE, out.height= "10%", out.width="85%"}
+
+include_graphics("https://diegopftrindade.netlify.app/img/fig_graphical_abs.png")
+```
+]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br><br><br><br><br><br>
+
+.small[Trindade, Carmona & Pärtel 2020, Global Change Biol.]
+
+
 ---
 class: inverse
 
