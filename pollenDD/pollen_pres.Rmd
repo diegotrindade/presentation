@@ -359,3 +359,19 @@ class: inverse
 
 - Dark diversity provides a valuable tool to assess how much, fast and in what direction species pools changed over millennial scales.
 
+---
+class: inverse, center, middle
+## Find me on...
+
+<br>
+
+.large[
+Twitter: <a href="http://twitter.com/diegopftrindade"><i class="fa fa-twitter fa-fw"></i>&nbsp; @diegopftrindade</a><br>
+
+E-mail: <a href="mailto:dpftrindade@gmail.com"><i class="fa fa-google fa-fw"></i>&nbsp; dpftrindade@gmail.com</a><br>
+
+Website: <a href="https://diegopftrindade.netlify.app"><i class="fa fa-link fa-fw"></i>&nbsp; diegopftrindade.netlify.app</a><br>
+
+
+
+]
