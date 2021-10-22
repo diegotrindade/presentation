@@ -217,7 +217,9 @@ class: inverse
 library(knitr)
 include_graphics("lakes.png")
 ```
-Reitalu et al. 2015]
+]
+
+.pull-left[Reitalu et al. 2015]
 
 .right-column-txt[
 - Sedimentary pollen data was collected in 20 Lakes in Estonia and Latvia;
