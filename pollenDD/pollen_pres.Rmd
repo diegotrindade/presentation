@@ -13,6 +13,9 @@ output:
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
+library(xaringan)
+library(rmarkdown)
+library(knitr)
 ```
 
 
@@ -27,15 +30,14 @@ class: inverse, center, top
 <br /><br />
 <br />
 
-# .small[Observed and dark diversity dynamics over the last 14,500 years in Northeastern Europe: taxonomic and functional analysis of pollen data]
+# .small[Taxonomic and functional analysis of observed and dark diversity: dynamics over the last 14,500 years in Northern Europe]
 
 <br />
 #### .large[Diego Trindade]
-##### .large[Macroecology workgroup]
+##### .large[University of Tartu - Macroecology workgroup]
 
---
-##### .large[Meelis Pärtel, Carlos Carmona, Triin Reitalu]
 
+##### .large[Carlos Carmona, Triin Reitalu, Meelis Pärtel]
 
 ---
 class: inverse
@@ -43,8 +45,8 @@ class: inverse
 ### Dark diversity concept and the filtering metaphor
 
 
-.pull-left[
-```{r echo=FALSE, out.height= "20%", out.width="90%"}
+.left-column-img[
+```{r echo=FALSE, out.height= "20%", out.width="60%"}
 
 include_graphics("assembly.jpeg")
 ```
@@ -53,16 +55,16 @@ include_graphics("assembly.jpeg")
 <br>
 <br>
 --
-
+.pull-right[
 - Dark diversity: **set of suitable but locally absent species**;
-
---
 
 <br>
 
 - Important to shed light on the process that govern local community assembly;
 
---
+<br>
+
+- Dark diversity is estimated based on co-occurrence of species;
 
 <br>
 
@@ -73,7 +75,7 @@ include_graphics("assembly.jpeg")
 - Useful metric to compare different regions, landscapes, taxa etc.
 
 
-
+]
 
 ---
 
@@ -81,7 +83,7 @@ class: inverse
 
 ### Dark diversity reveals what species are missing..
 
-#### .large[What about "why" species are missing?]
+#### .large[But "why" are species missing?]
 
 - We can use functional traits:
 
@@ -108,13 +110,11 @@ Moeslund et al. 2017]
 .center[
 ```{r echo=FALSE, out.height= "20%", out.width="52%"}
 
-include_graphics("lichens.png")
+include_graphics("trindade_lichen.png")
 ```
-<br>Trindade et al. submitted]
-
+<br>Trindade et al. 2021]
 
 ---
-
 class: inverse
 
 ### How site-specific species pools change over time?
@@ -142,25 +142,6 @@ include_graphics("assembly.jpeg")
 ---
 class: inverse
 
-### Species gains and losses
-
-
-.center[
-```{r echo=FALSE, out.height= "20%", out.width="65%"}
-
-include_graphics("https://diegopftrindade.netlify.app/img/fig_graphical_abs.png")
-```
-.pull-right[.small[Trindade, Carmona & Pärtel 2020, Global Change Biol.]]]
-
-
-<br>
-- Both species and traits will flow within and into/out the site-specific species pool over time
-
-- However, how both observed and dark diversity dynamics change over time is still unknown
-
----
-class: inverse
-
 ### Sedimentary pollen data
 
 - Allows to reconstruct millennial time-scale vegetation dynamics
@@ -181,23 +162,26 @@ class: inverse
 ```{r echo=FALSE, out.height= "20%", out.width="55%"}
 # All defaults
 library(knitr)
-include_graphics("https://media.giphy.com/media/rULGb0wtaeAEM/giphy.gif")
+include_graphics("pollen2.jpeg")
 ```
 ]
 ---
 class: inverse
 
-### LG, Holocene and Archaeological periods in Estonia
+### LG, Holocene and Archaeological periods in NE Europe
 
 .left-column-img[
 ```{r echo=FALSE,  out.width="70%"}
 
-include_graphics("temperature.png")
+include_graphics("fig_graph_abs.png")
 ```
 
 ]
 
-.right-column-txt[- Mesolithic: Natural succession from open birch to more closed forests
+.right-column-txt[
+- Late Glacial: Area covered by ice; tundra vegetation
+
+- Mesolithic: More closed forests
 
 - Neolithic: Broad-leaved forests replaced the birch- and pine-dominated forests; Some species related to grazed areas.
 
@@ -205,34 +189,33 @@ include_graphics("temperature.png")
 
 - Iron age: Forest clearances; introduction of arable farming; increasing population density
 
-Poska & Saarse 1999; Poska et al. 2004]
+.pull-right[.small[Poska & Saarse 1999; Poska et al. 2004]]]
 
 ---
 class: inverse
-### Aims
-
-- Examining taxonomic and functional observed and dark diversity trends over millennial time scales
-
-- Understanding how climate and human activities might have shaped observed and dark diversity of plants in NE Europe
-
 ### General expectations
 
-- Both observed and dark diversity will increase over time, with marked differences between LG and Holocene period;
+- Number of species and functions in observed and dark diversity, as well as species pool size, will increase over time, especially after the LG period and during Late Holocene;
 
-- Important functional changes during the Mid-Holocene (warmest period) and from the Bronze age (high land-use changes)
+<br>
+- Dark diversity might increase faster than observed (decreasing community completeness);
+
+<br>
+- Dark diversity will be composed mostly by species with limited dispersal capacity (lower height, high clonality) and low stress tolerance (low seed weight and high SLA).
 
 ---
 class: inverse
 
 ### Pollen data and dark diversity estimation
-
-```{r echo=FALSE, out.height= "20%", out.width="80%"}
+.left-column-img[
+```{r echo=FALSE, out.height= "20%", out.width="70%"}
 # All defaults
 library(knitr)
-include_graphics("triin.png")
+include_graphics("lakes.png")
 ```
+Reitalu et al. 2015]
 
-
+.right-column-txt[
 - Sedimentary pollen data was collected in 20 Lakes in Estonia and Latvia;
 
 - Radiocarbon dates;
@@ -244,7 +227,7 @@ include_graphics("triin.png")
 - Dark diversity was estimated using the Hypergeometric method in "DarkDiv" package
 
 - Community completeness = ln(observed/dark)
-
+]
 ---
 class: inverse
 
@@ -260,38 +243,65 @@ class: inverse
   
   - Seed weight;
 
-- Functional diversity (Fric) - Trait probability density (TPD package);
+- Functional diversity - Trait probability density (TPD package);
 
 - Functional composition - Mean trait value;
 
-- Statistical analyses: Generalized additive models (GAMs)
+- Statistical analysis: Generalized additive models (GAMs)
 
 ---
 
 class: inverse
 
 #### .large[Observed and dark diversity increased over time]
+.left-column-img[
+```{r echo=FALSE, out.height= "60%", out.width="70%"}
 
-```{r echo=FALSE, out.height= "20%", out.width="80%"}
-
-include_graphics("obs_dark.png")
+include_graphics("tax.png")
 ```
+]
+.right-column-txt[
+- Observed and dark diversity increased after LG (**warming climate**);
+
+- Dark diversity decreased sharply after 8.2kBP ("cooling period");
+
+- Both observed and dark diversity increased during Late Holocene (~4kBP) (**Human activities**)
+
+  - Cereal cultivation
+  - Farming
+  - Higher population density
+]
 
 
-- Observed and dark diversity increased after LG;
+---
+class: inverse
+#### .large[Functional observed and dark diversity increased over time too, but less pronounced]
 
-- Dark diversity increased rather fast after the LG and Mid-Holocene (6k years BP);
+.left-column-img[
+```{r echo=FALSE, out.height= "60%", out.width="70%"}
+
+include_graphics("fig_functionalpollen.png")
+```
+]
+
+.right-column-txt[
+- Functional observed and dark diversity increased after LG and during the Late Holocene
+
+- Functional dark space volume is much smaller than observed space
+
+  - High functional redundancy at the species pool level ]
+
 ---
 
 class: inverse
 
 
-### Taxonomic completeness decreased almost linearly
+#### .large[Taxonomic completeness decreased almost linearly]
 
 
 ```{r echo=FALSE, out.height= "20%", out.width="49%"}
 
-include_graphics("taxo_comp.png")
+include_graphics("fig_taxonomic_completeness.png")
 ```
 
 
@@ -300,67 +310,48 @@ include_graphics("taxo_comp.png")
 class: inverse
 
 
-#### Functional completeness decreased too, but less pronouced
+#### .large[Functional completeness decreased too, but less pronouced]
 
 
 ```{r echo=FALSE, out.height= "20%", out.width="60%"}
 
-include_graphics("func_comp.png")
+include_graphics("fig_functional_completeness.png")
 ```
 
+- Species pool functional volume saturated after the LG
+
+- Species in dark diversity are highly functionally redundant
 ---
 class: inverse
 
-### What about the functional composition?
+#### .large[Species in dark diversity are more stress-intolerant and dispersal limited]
 
 ```{r echo=FALSE, out.height= "20%", out.width="75%"}
 
-include_graphics("cwm.png")
+include_graphics("fig_mean_trait.png")
 ```
 
-- Species in dark diversity are those with high SLA and low Height (low persistence ability)
+- Species in dark diversity are those with high SLA, low seed weight and  height (low dispersal/persistence ability)
 
-- Peaks in functional composition change during Mid-Holocene (clonality, seed mass and SLA)
+- Sharp decrease in seed weight and height of dark diversity species (8.2kBP)
+  - cooling period (harsher climate)
 
+- Decrease in seed weight and height of observed diversity species (~200 yBP)
+  - Species pool losses of taller and bigger-seeded species
+  
 ---
 class: inverse
-### Highlights
+### Take-home message
 
-- Both diversity and functional composition of species change from LG to Holocene;
+- Both taxonomic and functional diversity increased from LG to Holocene and during Late Holocene;
+  - Warming
+  - Human activities
 
 - Despite the fast increase in dark diversity over the Holocene (lower community completeness), the functional completeness changed little
 
-  - Functional redundancy
+  - Functional redundancy at the species pool
   
-- Dark diversity species are linked to low persistence ability (large leaves and shorter species);
-  
-- Most evident effects of climate and human activities on observed and dark diversity:
+- Dark diversity species are linked to low persistence and dispersal ability (large leaves, low seed weight and height);
 
-  - Peak in SLA, Clonality and Seed mass in dark diversity during the Mid-Holocene;
+- Dark diversity provides a valuable tool to assess how much, fast and in what direction species pools changed over millennial scales.
 
-  - Loss of taller and bigger seeded species in both observed and dark diversity from the Bronze Age (local and regional extinction)
-  
-
----
-class: inverse
-### Take-home messages
-
-- Dark diversity provides valuable information on how much, fast and in what direction species pools change over millennial scales;
-
-- LG and Holocene have marked differences in terms of diversity and composition;
-
-- Mid-Holocene changed little the observed diversity but more pronounced the dark diversity;
-
-- Human activities have been shaping both observed and dark diversity from the Bronze age until present
-
---
-
-.center[
-```{r echo=FALSE, out.height= "20%", out.width="55%"}
-
-include_graphics("https://media.giphy.com/media/R9BMyZ0Tu23Daa3Oxj/giphy.gif")
-
-
-```
-]
----

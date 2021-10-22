@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>pollen_pres.knit</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="my-css.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+class: inverse, center, top
+
+&lt;div class="my-logo-left"&gt;&lt;/div&gt;
+
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+
+&lt;br /&gt; 
+&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;br /&gt;
+
+# .small[Taxonomic and functional analysis of observed and dark diversity: dynamics over the last 14,500 years in Northern Europe]
+
+&lt;br /&gt;
+#### .large[Diego Trindade]
+##### .large[University of Tartu - Macroecology workgroup]
+
+
+##### .large[Carlos Carmona, Triin Reitalu, Meelis Pärtel]
+
+---
+class: inverse
+
+### Dark diversity concept and the filtering metaphor
+
+
+.left-column-img[
+&lt;img src="assembly.jpeg" width="60%" height="20%" /&gt;
+]
+
+&lt;br&gt;
+&lt;br&gt;
+--
+.pull-right[
+- Dark diversity: **set of suitable but locally absent species**;
+
+&lt;br&gt;
+
+- Important to shed light on the process that govern local community assembly;
+
+&lt;br&gt;
+
+- Dark diversity is estimated based on co-occurrence of species;
+
+&lt;br&gt;
+
+- Enables to assess how much of the species pool is realized within local site: community completeness (log(observed/dark));
+
+&lt;br&gt;
+
+- Useful metric to compare different regions, landscapes, taxa etc.
+
+
+]
+
+---
+
+class: inverse
+
+### Dark diversity reveals what species are missing..
+
+#### .large[But "why" are species missing?]
+
+- We can use functional traits:
+
+  - *Any morpho-physio-phenological traits that impact the fitness of individual species*
+
+--
+
+- Usually linked to dispersal and stress-tolerance
+
+.pull-left[
+&lt;img src="kersti.png" width="90%" height="10%" /&gt;
+Riibak et al. 2015]
+
+.pull-right[
+&lt;img src="moeslund.png" width="90%" height="10%" /&gt;
+Moeslund et al. 2017]
+--
+.center[
+&lt;img src="trindade_lichen.png" width="52%" height="20%" /&gt;
+&lt;br&gt;Trindade et al. 2021]
+
+---
+class: inverse
+
+### How site-specific species pools change over time?
+
+.pull-left[
+&lt;img src="assembly.jpeg" width="85%" height="10%" /&gt;
+]
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+
+- Species pools are not static but evolving components of biodiversity
+
+&lt;br&gt;
+
+- This is rather important in a global change context
+
+&lt;br&gt;
+
+---
+class: inverse
+
+### Sedimentary pollen data
+
+- Allows to reconstruct millennial time-scale vegetation dynamics
+
+&lt;br&gt;
+
+
+- Assess the effects of climate and land-use changes on biodiversity;
+
+&lt;br&gt;
+
+- Can provide insights on how vegetation will change in the future
+
+
+&lt;br&gt;
+&lt;br&gt;
+.center[
+&lt;img src="pollen2.jpeg" width="55%" height="20%" /&gt;
+]
+---
+class: inverse
+
+### LG, Holocene and Archaeological periods in NE Europe
+
+.left-column-img[
+&lt;img src="fig_graph_abs.png" width="70%" /&gt;
+
+]
+
+.right-column-txt[
+- Late Glacial: Area covered by ice; tundra vegetation
+
+- Mesolithic: More closed forests
+
+- Neolithic: Broad-leaved forests replaced the birch- and pine-dominated forests; Some species related to grazed areas.
+
+- Bronze age: Cereal cultivation; formation of Estonian alvars
+
+- Iron age: Forest clearances; introduction of arable farming; increasing population density
+
+.pull-right[.small[Poska &amp; Saarse 1999; Poska et al. 2004]]]
+
+---
+class: inverse
+### General expectations
+
+- Number of species and functions in observed and dark diversity, as well as species pool size, will increase over time, especially after the LG period and during Late Holocene;
+
+&lt;br&gt;
+- Dark diversity might increase faster than observed (decreasing community completeness);
+
+&lt;br&gt;
+- Dark diversity will be composed mostly by species with limited dispersal capacity (lower height, high clonality) and low stress tolerance (low seed weight and high SLA).
+
+---
+class: inverse
+
+### Pollen data and dark diversity estimation
+.left-column-img[
+&lt;img src="lakes.png" width="70%" height="20%" /&gt;
+Reitalu et al. 2015]
+
+.right-column-txt[
+- Sedimentary pollen data was collected in 20 Lakes in Estonia and Latvia;
+
+- Radiocarbon dates;
+
+- Data covers 14500 yr time span;
+
+&lt;br&gt;
+
+- Dark diversity was estimated using the Hypergeometric method in "DarkDiv" package
+
+- Community completeness = ln(observed/dark)
+]
+---
+class: inverse
+
+### Functional traits and analyses
+
+- Four traits: 
+
+  - Specific leaf area (SLA);
+  
+  - Plant height; 
+  
+  - Clonality;
+  
+  - Seed weight;
+
+- Functional diversity - Trait probability density (TPD package);
+
+- Functional composition - Mean trait value;
+
+- Statistical analysis: Generalized additive models (GAMs)
+
+---
+
+class: inverse
+
+#### .large[Observed and dark diversity increased over time]
+.left-column-img[
+&lt;img src="tax.png" width="70%" height="60%" /&gt;
+]
+.right-column-txt[
+- Observed and dark diversity increased after LG (**warming climate**);
+
+- Dark diversity decreased sharply after 8.2kBP ("cooling period");
+
+- Both observed and dark diversity increased during Late Holocene (~4kBP) (**Human activities**)
+
+  - Cereal cultivation
+  - Farming
+  - Higher population density
+]
+
+
+---
+class: inverse
+#### .large[Functional observed and dark diversity increased over time too, but less pronounced]
+
+.left-column-img[
+&lt;img src="fig_functionalpollen.png" width="70%" height="60%" /&gt;
+]
+
+.right-column-txt[
+- Functional observed and dark diversity increased after LG and during the Late Holocene
+
+- Functional dark space volume is much smaller than observed space
+
+  - High functional redundancy at the species pool level ]
+
+---
+
+class: inverse
+
+
+#### .large[Taxonomic completeness decreased almost linearly]
+
+
+&lt;img src="fig_taxonomic_completeness.png" width="49%" height="20%" /&gt;
+
+
+- Taxonomic community completeness decreased sharply over the LG until mid-Mesolithic (~9k years BP) and over the Neolithic until present
+---
+class: inverse
+
+
+#### .large[Functional completeness decreased too, but less pronouced]
+
+
+&lt;img src="fig_functional_completeness.png" width="60%" height="20%" /&gt;
+
+- Species pool functional volume saturated after the LG
+
+- Species in dark diversity are highly functionally redundant
+---
+class: inverse
+
+#### .large[Species in dark diversity are more stress-intolerant and dispersal limited]
+
+&lt;img src="fig_mean_trait.png" width="75%" height="20%" /&gt;
+
+- Species in dark diversity are those with high SLA, low seed weight and  height (low dispersal/persistence ability)
+
+- Sharp decrease in seed weight and height of dark diversity species (8.2kBP)
+  - cooling period (harsher climate)
+
+- Decrease in seed weight and height of observed diversity species (~200 yBP)
+  - Species pool losses of taller and bigger-seeded species
+  
+---
+class: inverse
+### Take-home message
+
+- Both taxonomic and functional diversity increased from LG to Holocene and during Late Holocene;
+  - Warming
+  - Human activities
+
+- Despite the fast increase in dark diversity over the Holocene (lower community completeness), the functional completeness changed little
+
+  - Functional redundancy at the species pool
+  
+- Dark diversity species are linked to low persistence and dispersal ability (large leaves, low seed weight and height);
+
+- Dark diversity provides a valuable tool to assess how much, fast and in what direction species pools changed over millennial scales.
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"seal": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
