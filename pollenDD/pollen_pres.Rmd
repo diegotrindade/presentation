@@ -110,7 +110,7 @@ Riibak et al. 2015]
 include_graphics("moeslund.png")
 ```
 Moeslund et al. 2017]
---
+
 .center[
 ```{r echo=FALSE, out.height= "20%", out.width="52%"}
 
@@ -121,7 +121,7 @@ include_graphics("trindade_lichen.png")
 ---
 class: inverse
 
-### How site-specific species pools change over time?
+### How do site-specific species pools change over time?
 
 .pull-left[
 ```{r echo=FALSE, out.height= "10%", out.width="85%"}
@@ -229,6 +229,8 @@ Reitalu et al. 2015]
 <br>
 
 - Dark diversity was estimated using the Hypergeometric method in "DarkDiv" package
+  - Based on probability
+  - We selected species with >90% probability
 
 - Community completeness = ln(observed/dark)
 ]
@@ -289,7 +291,7 @@ include_graphics("fig_functionalpollen.png")
 ]
 
 .right-column-txt[
-- Functional observed and dark diversity increased after LG and during the Late Holocene
+- Functional observed and dark diversity increased after LG anad during the Late Holocene
 
 - Functional dark space volume is much smaller than observed space
 
@@ -303,7 +305,7 @@ class: inverse
 #### .large[Taxonomic completeness decreased almost linearly]
 
 
-```{r echo=FALSE, out.height= "20%", out.width="49%"}
+```{r echo=FALSE, out.height= "20%", out.width="60%"}
 
 include_graphics("fig_taxonomic_completeness.png")
 ```
@@ -329,19 +331,23 @@ include_graphics("fig_functional_completeness.png")
 class: inverse
 
 #### .large[Species in dark diversity are more stress-intolerant and dispersal limited]
+.left-column-img[
+```{r echo=FALSE, out.height= "40%", out.width="70%"}
 
-```{r echo=FALSE, out.height= "20%", out.width="75%"}
-
-include_graphics("fig_mean_trait.png")
+include_graphics("func_comp2.png")
 ```
+]
+<br>
+<br>
 
+.right-column-txt[
 - Species in dark diversity are those with high SLA, low seed weight and  height (low dispersal/persistence ability)
 
 - Sharp decrease in seed weight and height of dark diversity species (8.2kBP)
   - cooling period (harsher climate)
 
 - Decrease in seed weight and height of observed diversity species (~200 yBP)
-  - Species pool losses of taller and bigger-seeded species
+  - Species pool losses of taller and bigger-seeded species]
   
 ---
 class: inverse
